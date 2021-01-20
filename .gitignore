@@ -25,3 +25,7 @@ hs_err_pid*
 lap-trinh-mang/.classpath
 lap-trinh-mang/.project
 *.prefs
+client/.classpath
+client/.project
+server/.project
+server/.classpath
