@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab 06 - 1733403 - Nguyen Tuan Anh</title>
+    <style>
+        .container {
+            width: 468px;
+            margin: 20px auto 0 auto;
+        }
+
+        .frame {
+            background-color: #00659c;
+            width: 468px;
+            height: 60px;
+            margin: 20px 0;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        .frame span {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+        }
+
+        .form-title {
+            margin: 0 auto;
+
+        }
+
+        table {
+            width: 468px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="frame"><span>468 x 60</span></div>
+        <div class="form-title">
+            <h1>Đăng ký thành viên</h1>
+        </div>
+        <div>
+            <form action="" method="POST">
+                <table>
+                    <tr>
+                        <td><label>Họ tên:</label></td>
+                        <td><input type="text" name="fullname"></td>
+                    </tr>
+                    <tr>
+                        <td><label></label>Tên đăng nhập:</td>
+                        <td><input type="text" name="username"></td>
+                    </tr>
+                    <tr>
+                        <td><label></label>Mật khẩu:</td>
+                        <td><input type="password" name="password"></td>
+                    </tr>
+                    <tr>
+                        <td><label></label>Email:</td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label></label>Giới tính:</td>
+                        <td>
+                            <select id="gender">
+                                <option name="gender" value="male">Nam</option>
+                                <option name="gender" value="female">Nu</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label></label>Sơ lược về bạn:</td>
+                        <td><textarea name="summary" id="summary" cols="20" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Bạn trên 18 tuổi?</label>
+                        </td>
+                        <td><input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Đúng</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Sai</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" id="term" name="term" value="true">
+                            <label for="term">Tôi đồng ý sử dụng điều khoản bên dưới:</label>
+                            <ol>
+                                <li>Sử dụng hợp pháp</li>
+                                <li>Tuân thủ các chính sách của dịch vụ</li>
+                                <li>Không sao chép, xuất bản lại nội dung</li>
+                            </ol>
+                            <a target="_blank" href="google.com">Đọc thêm</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: end;">
+                            <input type="submit" value="Đăng ký">
+                            <input type="button" value="Nhập lại" onclick="resetForm()">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
